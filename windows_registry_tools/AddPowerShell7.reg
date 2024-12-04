@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell7Admin]
+@="PowerShell 7 Here (Admin)"
+"Icon"="C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\PowerShell7Admin\command]
+@="powershell -Command \"Start-Process 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' -ArgumentList '-NoExit -Command Set-Location -LiteralPath \\\"%V\\\"' -Verb RunAs\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\PowerShell7Admin]
+@="PowerShell 7 Here (Admin)"
+"Icon"="C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\PowerShell7Admin\command]
+@="powershell -Command \"Start-Process 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' -ArgumentList '-NoExit -Command Set-Location -LiteralPath \\\"%V\\\"' -Verb RunAs\""
